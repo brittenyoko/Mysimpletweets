@@ -55,8 +55,6 @@ private TwitterClient client;
                 super.onFailure(statusCode, headers, throwable, errorResponse);
             }
         });
-        // closes the activity and returns to first screen
-//        this.finish();
     }
 
 

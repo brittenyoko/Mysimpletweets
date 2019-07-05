@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import java.text.ParseException;
@@ -49,8 +50,13 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         holder.tvUsername.setText(tweet.user.name);
         holder.tvBody.setText(tweet.body);
         holder.tvTime.setText(time);
+        holder.tvLikes.setText(tweet.likes);
+        holder.tvRetweets.setText(tweet.retweets);
 
-        Glide.with(context).load(tweet.user.profileImageUrl).into(holder.ivProfileImage);
+        Glide.with(context)
+                .load(tweet.user.profileImageUrl)
+                .apply(RequestOptions.circleCropTransform())
+                .into(holder.ivProfileImage);
     }
 
     @Override
@@ -63,6 +69,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public TextView tvUsername;
         public TextView tvBody;
         public  TextView tvTime;
+        public TextView tvLikes;
+        public TextView tvRetweets;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -73,6 +81,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvUsername = (TextView) itemView.findViewById(R.id.tvUsertName);
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvTime = (TextView) itemView.findViewById(R.id.tvTime);
+            tvLikes = (TextView) itemView.findViewById(R.id.tvLikes);
+            tvRetweets = (TextView) itemView.findViewById(R.id.tvRetweets);
         }
 
     }
