@@ -53,6 +53,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         holder.tvLikes.setText(tweet.likes);
         holder.tvRetweets.setText(tweet.retweets);
 
+        //holder.tvReplies.setText(tweet.replies);
+
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
                 .apply(RequestOptions.circleCropTransform())
@@ -68,9 +70,11 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public ImageView ivProfileImage;
         public TextView tvUsername;
         public TextView tvBody;
-        public  TextView tvTime;
+        public TextView tvTime;
         public TextView tvLikes;
         public TextView tvRetweets;
+        public String mediaUrl;
+        //public TextView tvReplies;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -83,6 +87,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvTime = (TextView) itemView.findViewById(R.id.tvTime);
             tvLikes = (TextView) itemView.findViewById(R.id.tvLikes);
             tvRetweets = (TextView) itemView.findViewById(R.id.tvRetweets);
+            //tvReplies = (TextView) itemView.findViewById(R.id.tvReplies);
         }
 
     }
