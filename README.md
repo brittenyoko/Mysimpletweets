@@ -1,8 +1,8 @@
-# Project 3 - *Name of App Here*
+# Project 3 - My Simple Tweets
 
-**Name of your app** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+My Simple Tweets is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **X** hours spent in total
+Time spent: 22 hours spent in total
 
 ## User Stories
 
@@ -48,6 +48,7 @@ The following **additional** features are implemented:
 * [x] Showed number of likes and retweets for each tweet
 * [x] Allowed user to close Compose Tweet Activity and return to Timeline through a button
 * [x] Changed Launcher to be consistent to twitter logo
+* [x] Made profile images circular using Glide
 
 
 ## Video Walkthrough
