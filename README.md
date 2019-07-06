@@ -12,7 +12,7 @@ The following **required** functionality is completed:
 * [x]	User can **view tweets from their home timeline**
   * [x] User is displayed the username, name, and body for each tweet
   * [x] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
-* [x]User can **compose and post a new tweet**
+* [x] User can **compose and post a new tweet**
   * [x] User can click a “Compose” icon in the Action Bar on the top right
   * [x] User can then enter a new tweet and post this to twitter
   * [x] User is taken back to home timeline with **new tweet visible** in timeline
@@ -46,15 +46,15 @@ The following **bonus** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Showed number of likes and retweets for each tweet
-* [x] Allowed user to close Compose Tweet Activity and return to Timeline
-* [x] Changed Launcher to be consistent with twitter branding
+* [x] Allowed user to close Compose Tweet Activity and return to Timeline through a button
+* [x] Changed Launcher to be consistent to twitter logo
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='twitterwalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -69,7 +69,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2019 Britteny Okorom-Achuonye
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
